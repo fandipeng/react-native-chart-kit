@@ -487,6 +487,7 @@ class LineChart extends AbstractChart {
       segments,
       transparent = false,
       chartConfig = {},
+      backgroundColor
     } = this.props;
     const { scrollableDotHorizontalOffset } = this.state;
     const { labels = [] } = data;
@@ -526,7 +527,7 @@ class LineChart extends AbstractChart {
             height={height + legendOffset}
             rx={borderRadius}
             ry={borderRadius}
-            fill="url(#backgroundGradient)"
+            fill={backgroundColor}
             fillOpacity={transparent ? 0 : 1}
           />
           {this.props.data.legend &&
