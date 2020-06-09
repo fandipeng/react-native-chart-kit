@@ -99,7 +99,8 @@ class BarChart extends AbstractChart {
       withInnerLines = true,
       showBarTops = true,
       showValuesOnTopOfBars = false,
-      segments = 4
+      segments = 4,
+      backgroundColor
     } = this.props;
     const { borderRadius = 0, paddingTop = 16, paddingRight = 64 } = style;
     const config = {
@@ -134,7 +135,7 @@ class BarChart extends AbstractChart {
             height={height}
             rx={borderRadius}
             ry={borderRadius}
-            fill="url(#backgroundGradient)"
+            fill={backgroundColor}
           />
           <G>
             {withInnerLines
