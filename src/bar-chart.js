@@ -102,7 +102,7 @@ class BarChart extends AbstractChart {
       segments = 4,
       backgroundColor
     } = this.props;
-    const { borderRadius = 0, paddingTop = 16, paddingRight = 64 } = style;
+    const { borderRadius = 0, paddingTop = 16, paddingRight = 34 } = style;
     const config = {
       width,
       height,
